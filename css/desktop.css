@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+body {
+    width: 100%;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 10pt;
+    color: #333; /* cinza mais escuro */
+    background: #000 url("../imagens/fundo-baixo.jpg") no-repeat center bottom; /* a cor e a imagem de fundo podem ser colocadas no mesmo comando */
+}
+
+h1 {
+    font-size: 18pt;
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-size: 14pt;
+    padding-bottom: 5px;
+}
+
+p {
+    margin: 0px 0px 20px;
+    line-height: 1.5em; /* espaçamento entre linhas */
+}
+
+div#interface {
+    width: 950px;
+    padding: 10px 10px 0px 10px; /* sentido horário */
+    background-color: rgba(255, 255, 255, 0.75); /* o máximo das cores do rgb somadas dão branco, e a última letra é para medir a quantidade de transparência */
+    margin: auto; /* centraliza a margem */
+}
+
+aside#logo-menu {
+    width: 220px;
+    float: left; /* ele prende o q foi atacado para um lado e deixa o outro lado para o resto das coisas*/
+    position: fixed; /* fixed congela o q foi atacado */
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    background-color: #ccc;
+}
+
+header img {
+    margin: 12px 0px 0px 0px;
+}
+
+header, section, article, .imagem, section {
+    margin: 0px 0px 15px 0px;
+}
+
+nav ul li {
+    list-style: none;
+    line-height: 32px;
+    border-bottom: 1px solid #ccc;
+
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    font-size: 11pt;
+    transition: all 0.5s ease 0.3s;
+}
+
+nav ul li a:hover {
+    color: #fff;
+    background-color: #333;
+    text-indent: 20px; /* ele faz a palavra ir para o lado na hora que o mouse passar */
+}
+
+section {
+    width: 700px;
+    float: right;
+}
+
+article#texto {
+    width: 380px;
+    float: left;
+}
+
+article#artigo-interno {
+    width: 100%;
+    float: left:
+}
+
+aside#imagens {
+    width: 300px;
+    float: right;
+}
+
+.imagens {
+    width: 300px;
+}
+
+.video {
+    width: 560px;
+    height: 315px;
+}
+
+.mapa {
+    width: 700px;
+    height: 450px;
+}
+
+footer {
+    clear: both; /* limpa o efeito dos floats anteriores */
+    width: 100%;
+    line-height: 50px;
+    text-align: right;
+    border-top: 1px solid #333;
+}
+
+footer a {
+    color: #000;
+    font-size: 10pt;
+    font-style: italic;
+}
